@@ -1,0 +1,12 @@
+<%= form_for (task) do |f| %>
+    <div class="container">
+        <h1>New Task</h1>
+        <div class="d-flex flex-column my-form">
+            <%= f.label :title %>
+            <%= f.text_field :title %>
+            <%= f.label :details %>
+            <%= f.text_area :details, :rows => 3 %>
+            <%= f.submit :class => 'btn btn-primary' %>
+        </div>
+    </div>
+<% end %>

@@ -11,5 +11,12 @@
             <%= link_to "#{task.title}", task_path(task) %>
         </li>
     <% end %>
+    <div class="line"></div>
+        <div class="footer pt-3">
+            <%= link_to new_task_path do %>
+                <i class="fas fa-plus"></i> Add a new task
+            <% end %>
+        </div>
+
 </ul>
 </div>
